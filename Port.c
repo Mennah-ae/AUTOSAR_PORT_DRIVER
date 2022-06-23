@@ -6,7 +6,7 @@
  *
  * Description: Source file for TM4C123GH6PM Microcontroller - Port Driver.
  *
- * Author: Mohamed Tarek
+ * Author: Menna Saeed
  ******************************************************************************/
 
 #include "Port.h"
@@ -392,7 +392,7 @@ void Port_RefreshPortDirection(void )
     }
     if (g_JTAG_flag == STD_LOW)
 	{
-         /*The function Port_RefreshPortDirection shall exclude those port pins from refreshing that are configured as ‘pin direction changeable during runtime*/ 
+         /*The function Port_RefreshPortDirection shall exclude those port pins from refreshing that are configured as Â‘pin direction changeable during runtime*/ 
           if(ConfigPtr-> Pin_directionChange == PIN_DIRECTION_CHANGEABLE_OFF )
 		{
                   switch (ConfigPtr->Pin_direction)
